@@ -1,11 +1,10 @@
 import dotenv from "dotenv";
 dotenv.config();
 
-import bcrypt from "bcryptjs";
 import { connectDatabase, disconnectDatabase } from "../config/database";
 import { User } from "../models/user.model";
 import { Table } from "../models/table.model";
-import { USER_ROLES, SALT_ROUNDS } from "../constants";
+import { USER_ROLES } from "../constants";
 
 const TABLES_SEED = [
   { tableNumber: 1, seatingCapacity: 2 },
